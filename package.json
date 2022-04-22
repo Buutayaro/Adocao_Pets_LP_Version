@@ -1,0 +1,18 @@
+{
+  "name": "front-end-pi-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}

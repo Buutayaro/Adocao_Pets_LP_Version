@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none ; /* Elimina marcadores do menu */
+}
+
+
+/*Irá centralizar todas as tags h2 e h3*/
+.h2, h3{
+    text-align: center; 
+}
+
+/* Formatação das caracteristicas  */
+#alinhar{
+    margin: 10%;  
+    background-color: rgb(248, 205, 153);   /* Cor de fundo*/
+    border-radius: 0%;  /* Arredonda a cor de fundo*/
+    text-align:center ;  /*Alinha o texto dentro da formatação*/    
+}
+
+/* MENU */
+header{
+    background-color: white;
+    /*position: absolute;*/
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
+}
+
+.menu, .conta{
+    font-size: 20px;
+}
+
+ /* ITENS DO MENU */
+
+.itens{
+    display: flex;
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.itens > li{
+    padding: 20px;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+    /* EFEITO DE PASSAR O MOUSE */
+
+.link:hover{
+    color: #ff973d;
+}
+
+    /* LONGIN/SINGUP */
+
+.conta{
+    display: flex;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.clink{
+    text-decoration: none;
+    padding: 15PX;
+}
+
+#log{
+    color:var(--cor2);
+    font-weight: bold;
+}
+
+#log:hover{
+    color: #ff973d;
+}
+
+#sing{
+    background-color: #ff973d;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+#sing:hover{
+    background-color: #e48635;
+    color: white;
+    transition: 0.5s;
+}
+
+.conta > p{
+    padding: 10px;
+}
+
+/* login */
+
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: #64430b;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+main form input {
+    background: rgb(248, 205, 153);
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: rgba(166, 166, 166);
+    font-size: 1rem;
+    border: 1px solid #040B18;
+    border-radius: 8px;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    margin-top: 4rem;
+    border: none;
+    border-radius: 32px;
+    background: #64430b;
+    color: white;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+    background: rgb(248, 205, 153);
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    section.images img {
+        width: 110%;
+    }
+
+    section.images .circle {
+        clip-path: circle(35% at right 80%);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    section.images {
+        display: none;
+        visibility: hidden;
+    }
+
+    main {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main .alternative span {
+        font-size: 0.8rem;
+    }
+
+    main form label span, main form input[type="submit"] {
+        font-size: 1rem;
+    }
+}
